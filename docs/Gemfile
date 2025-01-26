@@ -3,9 +3,9 @@
 source "https://rubygems.org"
 
 # Local-only Gems
-install_if -> { ENV["GITHUB_ACTIONS"] != "true" } do
+#install_if -> { ENV["GITHUB_ACTIONS"] != "true" } do
     gem "webrick", "~> 1.9"
-end
+#end
 
 # gems for local and GitHub Pages
 gem "github-pages", "~> 232", :group => :jekyll_plugins
